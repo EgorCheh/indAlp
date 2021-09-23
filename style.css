@@ -1,13 +1,18 @@
 header {
   background-color: #353333;
-  height: 65px;
-
+  height: 55px;
+  border : 1px solid black;
   color: white;
 }
-a {
+.site-header a{
   text-decoration: transparent;
-  color: white;
+  color: white
 }
+.site-header a:hover{
+  text-decoration: transparent;
+  color: #ffd034;
+}
+
 body,
 html {
   height: 100%;
@@ -49,7 +54,7 @@ section {
 }
 
 #section_offer {
-  background-color: #ffd034fa;
+  background-color: #353333f1;
 }
 
 .parallax {
@@ -188,6 +193,87 @@ h4 {
   display: inline-block;
   margin-left: 30px;
 }
+.why2{
+  width: 100%;
+  margin-top: 20px;
+}
+#section_why_2 .card-title{
+  text-align: center
+  
+}
+#section_questions .container_worktype_cards {
+  padding-bottom: 50px;
+}
+
+
+#section_questions .card-title,svg{
+  display: inline;
+ 
+}
+#section_questions .card-title{
+  margin-left: 15px;
+  font-weight:bold;
+}
+
+#section_questions .card{
+  padding: 15px;
+}
+
+.card-title,h1{
+  font-weight:bold;
+}
+#section_offer .container{
+padding-top: 85px;
+
+}
+#section_offer .container_form {
+  background-color: white;
+  border: 5px solid #FFCE34;
+  max-height: 480px;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 5px 60px;
+  border-radius: 20px;
+}
+
+
+#section_offer input {
+  
+  border-radius: 15px;
+}
+#section_offer button {
+  border-radius: 15px;
+  width: 200px;
+ 
+}
+#section_offer .worktype_text{
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 480px) {
   #container_about {
@@ -247,4 +333,7 @@ h4 {
     margin-left: 8px;
     max-width: 250px;
   }
+
+
+
 }
