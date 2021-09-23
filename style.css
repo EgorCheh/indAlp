@@ -60,7 +60,7 @@ section {
 .parallax {
   background-image: url("parallax.png");
 
-  min-width: 500px;
+  min-width: 350px;
 
   background-attachment: fixed;
   background-position: center;
@@ -91,10 +91,13 @@ section {
   padding-top: 85px;
 }
 .text_about p {
-  width: 65%;
+  width: 100%;
 }
 
 .slider {
+  max-width: 800px;
+}
+.slider-2 {
   max-width: 800px;
 }
 
@@ -250,16 +253,116 @@ padding-top: 85px;
   text-align: center;
 }
 
+#section_reviews{
+  padding-bottom: 100px;
+}
+
+
+.slider-container-reviews{
+  display: flex;
+  position: relative;
+  padding: 35px;
+  padding-left: 70px;
+  background-color: white;
+  height: 100%;
+}
+.slider-container-reviews .photo{
+display: inline-block;
+width: 170px;
+height: max-content;
+height: 170px;
+border-radius: 1700px;
+
+background: url(/ron.png) no-repeat center center;
+background-size: cover;
+}
+
+.slider-container-reviews .text{
+  display: inline-block;
+  width: 68%;
+  padding-left: 30px;
+  
+}
+
+
+
+#myModal {
+  max-width: 450px; max-height:  300px;
+  margin: 0 auto;
+  padding: 18px 15px;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  margin: auto;
+  display: none;
+  opacity: 0;
+  z-index: 38;
+  text-align: center;
+  background-color: white;
+  border: 5px solid #FFCE34;
+  border-radius: 20px;
+
+}
+#myModal input{
+  border-radius: 35px;
+}
+
+#myModal button{
+  border-radius: 35px;
+
+}
+
+
+#myModal #myModal__close {
+  width: 21px; height: 21px;
+  position: absolute;
+  top: 1px; right: 11px;
+  cursor: pointer;
+  display: block;
+  font-size: 29px;
+}
+#myOverlay {
+  z-index: 37;
+  position: fixed;
+  background-color: rgba(0,0,0,.7);
+  width: 100%; height: 100%;
+  top: 0; left: 0;
+  cursor :pointer;
+  display :none;
+}
 
 
 
 
 
 
+.slider-1 {
+  position: relative;
+  overflow: hidden;
+  
+}
+.slider-1 .slider__wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.slider-1 .slider__items {
+  display: flex;
+  transition: transform 0.6s ease;
+}
 
 
+.slider-2 {
+  position: relative;
+  overflow: hidden;
 
-
+}
+.slider-2 .slider__wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.slider-2 .slider__items {
+  display: flex;
+  transition: transform 0.6s ease;
+}
 
 
 
@@ -332,8 +435,32 @@ padding-top: 85px;
     display: inline-block;
     margin-left: 8px;
     max-width: 250px;
+    
   }
 
+#section_why_2 .container_worktype_cards{
 
+  padding-bottom: 20px;
+}
+#section_questions .card {
+  max-width: 300px;
+}
 
+#section_offer .container_form{
+  max-width: 300px;
+  margin-left: 5px;
+}
+
+#section_why iframe {
+  max-width: 300px;
+}
+.container_why{
+  padding-bottom: 10px;
+}
+.parallax {
+  max-width: 480px;
+}
+header {
+  max-width: 480px;
+}
 }

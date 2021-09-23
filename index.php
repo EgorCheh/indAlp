@@ -13,19 +13,68 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
 
-            var slider = new SimpleAdaptiveSlider('.slider', {
+            var slider = new SimpleAdaptiveSlider(' .slider-1 ', {
+                autoplay: true,
+                interval: 7000,
+
+            });
+            var slider2 = new SimpleAdaptiveSlider('.slider-2   ', {
                 autoplay: true,
                 interval: 7000,
 
             });
         });
     </script>
+
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="magnific-popup/jquery.magnific-popup.js"></script>
+    <script>
+        $(document).ready(function() {
+            /* $("#offer-5min").submit(function(e) {
+                 e.preventDefault();
+                 $.ajax({
+                     type: "POST",
+                     url: "form-handler.php",
+                     data: $(this).serialize(),
+                     success: function(request) {
+                        alert("OK");
+                     },
+                 });
+             });*/
+            $('.work-type').click(function(event) {
+                event.preventDefault();
+                $('#myOverlay').fadeIn(297, function() {
+                    $('#myModal')
+                        .css('display', 'block')
+                        .animate({
+                            opacity: 1
+                        }, 198);
+                });
+            });
+
+            $('#myModal__close, #myOverlay').click(function() {
+                $('#myModal').animate({
+                    opacity: 0
+                }, 198, function() {
+                    $(this).css('display', 'none');
+                    $('#myOverlay').fadeOut(297);
+                });
+            });
+
+        });
+    </script>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+
+
     <header class="site-header sticky-top py-1">
         <nav class="container d-flex flex-column flex-md-row justify-content-between">
             <a class="py-2 d-none d-md-inline-block" href="#section_about">О КОМПАНИИ</a>
@@ -40,13 +89,40 @@
 
         </nav>
     </header>
+
+
+
+
+    <div id="myModal">
+        <form action="form-handler.php" method="POST">
+            <h3>Submit the offer</h3>
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Имя" name="name" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <input type="tel" class="form-control" placeholder="Телефон" name="phone" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+                <input type="mail" class="form-control" placeholder="Е-mail" name="mail" id="exampleInputPassword1">
+                <input type="hidden" name="form" value="work">
+            </div>
+            <button type="submit" class="btn btn-secondary" style=" background-color: #353333; border-color: #353333;;">Отправить заявку</button>
+        </form>
+    </div>
+    <div id="myOverlay"></div>
+
+
+
+
+
+
     </div>
     <!-- section  about-->
     <div class="parallax" id="first_parallax">
         <section id="section_about">
             <div class="container" id="container_about">
                 <div class="spiner_photo">
-                    <div class="slider">
+                    <div class="slider slider-1 ">
                         <div class="slider__wrapper">
                             <div class="slider__items">
                                 <div class="slider__item">
@@ -97,12 +173,13 @@
                     </b>
                 </div>
                 <div class="ordering_form">
-                    <form>
+                    <form id="offer-5min" action="form-handler.php" method="POST">
                         <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Имя" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input type="text" class="form-control" placeholder="Имя" name="name" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                         <div class="mb-3">
-                            <input type="tel" class="form-control" placeholder="Телефон" id="exampleInputPassword1">
+                            <input type="tel" class="form-control" placeholder="Телефон" name="phone" id="exampleInputPassword1">
+                            <input type="hidden" name="form" value="min">
                         </div>
                         <button type="submit" class="btn btn-secondary">Отправить заявку</button>
                     </form>
@@ -127,7 +204,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.content.</p>
-                            <a href="#" class="btn btn-secondary">Go somewhere</a>
+                            <a href="" class="btn btn-secondary work-type">Go somewhere</a>
                         </div>
                     </div>
                     <div class="card" style="width: 21rem;">
@@ -135,7 +212,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card'sSome quick example text to build on the card title and make up the bulk of tSome quick example text to build on the card title and make up the bulk of the card's content.he card's content. content.</p>
-                            <a href="#" class="btn btn-secondary">Go somewhere</a>
+                            <a href="" class="btn btn-secondary work-type">Go somewhere</a>
                         </div>
                     </div>
                     <div class="card" style="width: 21rem;">
@@ -143,7 +220,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-secondary">Go somewhere</a>
+                            <a href="" class="btn btn-secondary ">Go somewhere</a>
                         </div>
                     </div>
 
@@ -332,6 +409,60 @@
                     <h1>ОТЗЫВЫ</h1>
                     <h2 style="color:black">НАШИХ КЛИЕНТОВ</h2>
                 </div>
+                <div class="slider slider-2">
+                    <div class="slider__wrapper">
+                        <div class="slider__items">
+                            <div class="slider__item">
+                                <div class="slider-container-reviews">
+
+                                    <div class="photo">
+                                        <img src="/ron.jpg" alt="" srcset="">
+                                    </div>
+                                    <div class="text">
+                                        Чем меньше я знаю о чужих интрижках, тем я счастливей. Я не испытываю радости от заботы о других людях. Как-то я работал с одним парнем в течение трех лет и даже имени его не знал... Лучший друг за всю жизнь! Мы все еще временами никогда не разговариваем.
+                                        <br><br>
+                                        <strong>Рон Суонсон</strong>
+                                        <br>Пауни, штат Индиана 2018-03-15
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slider__item">
+                                <div class="slider-container-reviews">
+
+                                    <div class="photo">
+                                        <img src="/ron.jpg" alt="" srcset="">
+                                    </div>
+                                    <div class="text">
+                                        Чем меньше я знаю о чужих интрижках, тем я счастливей. Я не испытываю радости от заботы о других людях. Как-то я работал с одним парнем в течение трех лет и даже имени его не знал... Лучший друг за всю жизнь! Мы все еще временами никогда не разговариваем.
+                                        <br><br>
+                                        <strong>Рон Суонсон</strong>
+                                        <br>Пауни, штат Индиана 2018-03-15
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="slider__item">
+                                <div class="slider-container-reviews">
+
+                                    <div class="photo">
+                                        <img src="/ron.jpg" alt="" srcset="">
+                                    </div>
+                                    <div class="text">
+                                        Чем меньше я знаю о чужих интрижках, тем я счастливей. Я не испытываю радости от заботы о других людях. Как-то я работал с одним парнем в течение трех лет и даже имени его не знал... Лучший друг за всю жизнь! Мы все еще временами никогда не разговариваем.
+                                        <br><br>
+                                        <strong>Рон Суонсон</strong>
+                                        <br>Пауни, штат Индиана 2018-03-15
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+                    <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+                </div>
             </div>
         </section>
     </div>
@@ -339,24 +470,26 @@
     <div class="parallax">
         <section id="section_offer">
             <div class="container">
-                <div class="container_form" > <form>
-                <div class="worktype_text">
-                    <h2 style="color:black">ПОЗВОНИТЕ СЕЙЧАС И ПОЛУЧИТЕ</h2>
-                    <h1>СКИДКУ 15%!</h1><br>
-                <div class="mb-3">
+                <div class="container_form">
+                    <form action="form-handler.php" method="POST">
+                        <div class="worktype_text">
+                            <h2 style="color:black">ПОЗВОНИТЕ СЕЙЧАС И ПОЛУЧИТЕ</h2>
+                            <h1>СКИДКУ 15%!</h1><br>
+                            <div class="mb-3">
 
-                            <input type="text" class="form-control" placeholder="Имя" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                        <div class="mb-3">
-                            <input type="tel" class="form-control" placeholder="Телефон" id="exampleInputPassword1">
-                        </div>
-                        <div class="mb-3">
-                            <input type="mail" class="form-control" placeholder="Е-mail" id="exampleInputPassword1">
-                        </div>
-                        <button type="submit" class="btn btn-secondary" style=" background-color: #353333; border-color: #353333;;">Отправить заявку</button>
-                </form>
-            </div>
-               
+                                <input type="text" class="form-control" placeholder="Имя" name="name" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" placeholder="Телефон" name="phone" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3">
+                                <input type="mail" class="form-control" placeholder="Е-mail" name="mail" id="exampleInputPassword1">
+                                <input type="hidden" name="form" value="15pass">
+                            </div>
+                            <button type="submit" class="btn btn-secondary" style=" background-color: #353333; border-color: #353333;;">Отправить заявку</button>
+                    </form>
+                </div>
+
 
             </div>
         </section>
@@ -366,5 +499,7 @@
     </div>
 
 </body>
+
+
 
 </html>
