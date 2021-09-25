@@ -43,24 +43,36 @@
 
         });
     </script>
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
-    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="magnific-popup/jquery.magnific-popup.js"></script>
     <script>
         $(document).ready(function() {
-            /* $("#offer-5min").submit(function(e) {
+             $("form").submit(function(e) {
                  e.preventDefault();
                  $.ajax({
                      type: "POST",
                      url: "form-handler.php",
                      data: $(this).serialize(),
                      success: function(request) {
-                        alert("OK");
+                        alert("Заявка отпралена");
+                         $('#myModal').animate({
+                    opacity: 0
+                }, 198, function() {
+                    $(this).css('display', 'none');
+                    $('#myOverlay').fadeOut(297);
+                });
                      },
                  });
-             });*/
+             });
+
+
             $('.work-type').click(function(event) {
                 event.preventDefault();
                 $('#myOverlay').fadeIn(297, function() {
@@ -99,6 +111,7 @@
             <a class="py-2 d-none d-md-inline-block" href="#section_worktype">ПОТОЛКИ</a>
             <a class="py-2 d-none d-md-inline-block" href="#section_reviews">ОТЗЫВЫ</a>
             <a class="py-2 d-none d-md-inline-block" href="#section_questions">ВОПРОСЫ</a>
+            <a class="py-2 d-none d-md-inline-block" href="#section_objects">ОБЪЕКТЫ</a>
             <a class="py-2 d-none d-md-inline-block" href="tel:+3712161166">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
                     <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
@@ -115,10 +128,10 @@
         <form action="form-handler.php" method="POST">
             <h3>Submit the offer</h3>
             <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Имя" name="name" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="text" class="form-control"  placeholder="Имя" name="name" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
-                <input type="tel" class="form-control" placeholder="Телефон" name="phone" id="exampleInputPassword1">
+                <input type="tel" class="form-control" required placeholder="Телефон *" name="phone" id="exampleInputPassword1">
             </div>
             <div class="mb-3">
                 <input type="mail" class="form-control" placeholder="Е-mail" name="mail" id="exampleInputPassword1">
@@ -136,11 +149,13 @@
 
     </div>
     <!-- section  about-->
-    <div class="parallax" id="first_parallax">
+
+    <div class="parallax" id="first_parallax"></div>
+    <div class="parallax">
         <section id="section_about">
-            <div class="container" id="container_about">
+            <div class="container about " id="container_about">
                 <div class="spiner_photo">
-                    <div class="slider slider-1 ">
+                    <div class="slider  slider-1 ">
                         <div class="slider__wrapper">
                             <div class="slider__items">
                                 <div class="slider__item">
@@ -177,9 +192,10 @@
             </div>
         </section>
     </div>
+    </div>
 
     <!-- section_ordering-->
-    <div class="parallax">
+    <div class="parallax ordering">
         <section id="section_ordering">
             <div class="container">
                 <div class="ordering_text">
@@ -196,7 +212,7 @@
                             <input type="text" class="form-control" placeholder="Имя" name="name" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                         <div class="mb-3">
-                            <input type="tel" class="form-control" placeholder="Телефон" name="phone" id="exampleInputPassword1">
+                            <input type="tel" class="form-control" required placeholder="Телефон *" name="phone" id="exampleInputPassword1">
                             <input type="hidden" name="form" value="min">
                         </div>
                         <button type="submit" class="btn btn-secondary">Отправить заявку</button>
@@ -498,7 +514,7 @@
                                 <input type="text" class="form-control" placeholder="Имя" name="name" id="exampleInputEmail1" aria-describedby="emailHelp">
                             </div>
                             <div class="mb-3">
-                                <input type="tel" class="form-control" placeholder="Телефон" name="phone" id="exampleInputPassword1">
+                                <input type="tel" class="form-control" required placeholder="Телефон *" name="phone" id="exampleInputPassword1">
                             </div>
                             <div class="mb-3">
                                 <input type="mail" class="form-control" placeholder="Е-mail" name="mail" id="exampleInputPassword1">

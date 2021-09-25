@@ -27,6 +27,7 @@ section {
 }
 #section_about {
   background-color: #ffffff;
+  clip-path: polygon(46% 0, 50% 8%, 54% 0, 100% 0, 100% 100%, 0 100%, 0 0);
 }
 #section_ordering {
   background-color: #ffd034fa;
@@ -83,6 +84,10 @@ section {
 #container_about {
   display: flex;
   justify-content: space-between;
+   
+}
+.about{
+  padding-top: 65px;
 }
 .spiner_photo {
   display: inline-block;
