@@ -57,6 +57,10 @@ section {
   background-color: #353333f1;
 }
 
+#section_objects {
+  background-color: #ffffff;
+}
+
 .parallax {
   background-image: url("parallax.png");
 
@@ -121,6 +125,7 @@ section {
   font-weight: bold;
   display: none;
 }
+
 
 .img-fluid {
   display: inline-block;
@@ -284,6 +289,40 @@ background-size: cover;
   
 }
 
+#section_objects h2{
+  color: black;
+}
+.objects{
+ padding-top: 0;
+}
+
+#section_objects .spiner_photo{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#section_objects .text_about{
+  padding-top: 55px;
+}
+
+.ordering{
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #myModal {
@@ -366,6 +405,19 @@ background-size: cover;
 
 
 
+.slider-3 {
+  position: relative;
+  overflow: hidden;
+
+}
+.slider-3 .slider__wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.slider-3 .slider__items {
+  display: flex;
+  transition: transform 0.6s ease;
+}
 
 
 

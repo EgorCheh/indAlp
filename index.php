@@ -19,10 +19,28 @@
 
             });
             var slider2 = new SimpleAdaptiveSlider('.slider-2   ', {
-                autoplay: true,
+                autoplay: false,
                 interval: 7000,
 
             });
+
+            var slider = new SimpleAdaptiveSlider(' .slider-3 ', {
+                autoplay: false,
+                interval: 7000,
+
+            });
+            var slider = new SimpleAdaptiveSlider(' .slider-4 ', {
+                autoplay: false,
+                interval: 7000,
+
+            });
+            var slider = new SimpleAdaptiveSlider(' .slider-5 ', {
+                autoplay: false,
+                interval: 7000,
+
+            });
+
+
         });
     </script>
 
@@ -494,6 +512,129 @@
             </div>
         </section>
     </div>
+<!---section objects--->
+        <section id="section_objects">
+            <div class="container">
+            <div class="worktype_text">
+                    <h1>ОБЪЕКТЫ</h1>
+                    <h2 style="color:black">ГАЛЕРЕЯ</h2> 
+            </div>
+            <div class="container objects" id="container_about">
+                <div class="spiner_photo">
+                    <div class="slider slider-3 ">
+                        <div class="slider__wrapper">
+                            <div class="slider__items">
+                                <div class="slider__item">
+                                    <img class="img-fluid" src="/parallax.png" alt="..." width="800" height="400" loading="lazy">
+                                </div>
+                                <div class="slider__item">
+                                    <img class="img-fluid" src="/parallax.png" alt="..." width="800" height="400" loading="lazy">
+                                </div>
+                                <div class="slider__item">
+                                    <img class="img-fluid" src="/parallax.png" alt="..." width="800" height="400" loading="lazy">
+                                </div>
+                                <div class="slider__item">
+                                    <img class="img-fluid" src="/parallax.png" alt="..." width="800" height="400" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                        <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+                        <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+                    </div>
+
+                </div>
+                <div class="text_about">
+                <br>
+                    <h2> Industriālais alpīnisms</h2>
+                    <br>
+                    <p>
+                        Компания «Skin Ceiling» устанавливает натяжные потолки в Москве с 2009 года!
+                        Собственное производство позволяет обеспечить выгодные условия покупки по самым низким ценам.
+                        Использование только лучших материалов, комплектующих и профессиональный монтаж потолков
+                    </p>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="container objects" id="container_about">
+                <div class="spiner_photo">
+                    <div class="slider slider-4 ">
+                        <div class="slider__wrapper">
+                            <div class="slider__items">
+                                <div class="slider__item">
+                                    <img class="img-fluid" src="/parallax.png" alt="..." width="800" height="400" loading="lazy">
+                                </div>
+                                <div class="slider__item">
+                                    <img class="img-fluid" src="/parallax.png" alt="..." width="800" height="400" loading="lazy">
+                                </div>
+                                <div class="slider__item">
+                                    <img class="img-fluid" src="/parallax.png" alt="..." width="800" height="400" loading="lazy">
+                                </div>
+                                <div class="slider__item">
+                                    <img class="img-fluid" src="/parallax.png" alt="..." width="800" height="400" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                        <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+                        <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+                    </div>
+
+                </div>
+                <div class="text_about">
+                <br>
+                    <h2> Industriālais alpīnisms</h2>
+                    <br>
+                    <p>
+                        Компания «Skin Ceiling» устанавливает натяжные потолки в Москве с 2009 года!
+                        Собственное производство позволяет обеспечить выгодные условия покупки по самым низким ценам.
+                        Использование только лучших материалов, комплектующих и профессиональный монтаж потолков
+                    </p>
+                </div>
+
+            </div>
+
+<hr>
+            <div class="container objects" id="container_about">
+                <div class="spiner_photo">
+                    <div class="slider slider-5 ">
+                        <div class="slider__wrapper">
+                            <div class="slider__items">
+                                <div class="slider__item">
+                                    <img class="img-fluid" src="/parallax.png" alt="..." width="800" height="400" loading="lazy">
+                                </div>
+                                <div class="slider__item">
+                                    <img class="img-fluid" src="/parallax.png" alt="..." width="800" height="400" loading="lazy">
+                                </div>
+                                <div class="slider__item">
+                                    <img class="img-fluid" src="/parallax.png" alt="..." width="800" height="400" loading="lazy">
+                                </div>
+                                <div class="slider__item">
+                                    <img class="img-fluid" src="/parallax.png" alt="..." width="800" height="400" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                        <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+                        <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+                    </div>
+
+                </div>
+                <div class="text_about">
+                    <br>
+                    <h2> Industriālais alpīnisms</h2>
+                    <br>
+                    <p>
+                        Компания «Skin Ceiling» устанавливает натяжные потолки в Москве с 2009 года!
+                        Собственное производство позволяет обеспечить выгодные условия покупки по самым низким ценам.
+                        Использование только лучших материалов, комплектующих и профессиональный монтаж потолков
+                    </p>
+                </div>
+
+            </div>
+
+            </div>
+        </section>
 
 
     </div>
