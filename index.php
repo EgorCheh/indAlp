@@ -48,29 +48,29 @@
         new WOW().init();
     </script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="magnific-popup/jquery.magnific-popup.js"></script>
     <script>
         $(document).ready(function() {
-             $("form").submit(function(e) {
-                 e.preventDefault();
-                 $.ajax({
-                     type: "POST",
-                     url: "form-handler.php",
-                     data: $(this).serialize(),
-                     success: function(request) {
+            $("form").submit(function(e) {
+                e.preventDefault();
+                $.ajax({
+                    type: "POST",
+                    url: "form-handler.php",
+                    data: $(this).serialize(),
+                    success: function(request) {
                         alert("Заявка отпралена");
-                         $('#myModal').animate({
-                    opacity: 0
-                }, 198, function() {
-                    $(this).css('display', 'none');
-                    $('#myOverlay').fadeOut(297);
+                        $('#myModal').animate({
+                            opacity: 0
+                        }, 198, function() {
+                            $(this).css('display', 'none');
+                            $('#myOverlay').fadeOut(297);
+                        });
+                    },
                 });
-                     },
-                 });
-             });
+            });
 
 
             $('.work-type').click(function(event) {
@@ -128,7 +128,7 @@
         <form action="form-handler.php" method="POST">
             <h3>Submit the offer</h3>
             <div class="mb-3">
-                <input type="text" class="form-control"  placeholder="Имя" name="name" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="text" class="form-control" placeholder="Имя" name="name" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
                 <input type="tel" class="form-control" required placeholder="Телефон *" name="phone" id="exampleInputPassword1">
@@ -155,7 +155,7 @@
         <section id="section_about">
             <div class="container about " id="container_about">
                 <div class="spiner_photo">
-                    <div class="slider  slider-1 ">
+                    <div class="slider wow animate__animated animate__fadeInUpBig  slider-1 " data-wow-duration="2s">
                         <div class="slider__wrapper">
                             <div class="slider__items">
                                 <div class="slider__item">
@@ -177,7 +177,7 @@
                     </div>
 
                 </div>
-                <div class="text_about">
+                <div class="text_about wow animate__animated animate__fadeInUpBig " data-wow-duration="2s">
                     <h1>О КОМПАНИИ</h1>
                     <br>
                     <h3> Industriālais alpīnisms</h3>
@@ -198,7 +198,7 @@
     <div class="parallax ordering">
         <section id="section_ordering">
             <div class="container">
-                <div class="ordering_text">
+                <div class="ordering_text wow animate__animated animate__fadeInUpBig">
                     <strong>
                         <h1>РАССЧИТАЕМ ВАШ ЗАКАЗ</h1>
                     </strong>
@@ -206,7 +206,7 @@
                         <h2>ВСЕГО ЗА 5 МИНУТ</h2>
                     </b>
                 </div>
-                <div class="ordering_form">
+                <div class="ordering_form wow animate__animated animate__fadeInUpBig">
                     <form id="offer-5min" action="form-handler.php" method="POST">
                         <div class="mb-3">
                             <input type="text" class="form-control" placeholder="Имя" name="name" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -228,38 +228,42 @@
     <div class="parallax">
         <section id="section_worktype">
             <div class="container">
-                <div class="worktype_text">
+                <div class="worktype_text wow animate__animated animate__fadeInUpBig">
                     <h1>ПОДБЕРИТЕ ПОВЕРХНОСТЬ</h1>
                     <h2>ДЛЯ ВАШЕГО ПОТОЛКА</h2>
                 </div>
-                <div class="container_worktype_cards">
-                    <div class="card" style="width: 21rem;">
+
+                <div class="container_worktype_cards " >
+                    <div class="card wow animate__animated animate__fadeInUpBig " data-wow-duration="2s" data-wow-delay="0.08s" style="width: 21rem;">
                         <img src="parallax.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.content.</p>
-                            <a href="" class="btn btn-secondary work-type">Go somewhere</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 21rem;">
-                        <img src="parallax.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card'sSome quick example text to build on the card title and make up the bulk of tSome quick example text to build on the card title and make up the bulk of the card's content.he card's content. content.</p>
-                            <a href="" class="btn btn-secondary work-type">Go somewhere</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 21rem;">
-                        <img src="parallax.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="" class="btn btn-secondary ">Go somewhere</a>
+                        <div class="card-body wow animate__animated animate__fadeInUpBig">
+                            <h5 class="card-title wow animate__animated animate__fadeInUpBig">Card title</h5>
+                            <p class="card-tex wow animate__animated animate__fadeInUpBigt">Some quick example text to build on the card title and make up the bulk of the card's Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.content.</p>
+                            <a href="" class="btn btn-secondary work-type wow animate__animated animate__fadeInUpBig">Go somewhere</a>
                         </div>
                     </div>
 
-                </div>
-            </div>
+                    
+                        <div class="card wow animate__animated animate__fadeInUpBig " data-wow-duration="2s" style="width: 21rem;">
+                            <img src="parallax.png" class="card-img-top" alt="...">
+                            <div class="card-body wow animate__animated animate__fadeInUpBig">
+                                <h5 class="card-title wow animate__animated animate__fadeInUpBig">Card title</h5>
+                                <p class="card-tex wow animate__animated animate__fadeInUpBigt">Some quick example text to build on the card title and make up the bulk of the card's Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.content.</p>
+                                <a href="" class="btn btn-secondary work-type wow animate__animated animate__fadeInUpBig">Go somewhere</a>
+                            </div>
+                        </div>
+
+                            <div class="card wow animate__animated animate__fadeInUpBig " data-wow-duration="2s" data-wow-delay="0.03s" style="width: 21rem;">
+                                <img src="parallax.png" class="card-img-top" alt="...">
+                                <div class="card-body wow animate__animated animate__fadeInUpBig">
+                                    <h5 class="card-title wow animate__animated animate__fadeInUpBig">Card title</h5>
+                                    <p class="card-tex wow animate__animated animate__fadeInUpBigt">Some quick example text to build on the card title and make up the bulk of the card's Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.content.</p>
+                                    <a href="" class="btn btn-secondary work-type wow animate__animated animate__fadeInUpBig">Go somewhere</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
         </section>
     </div>
 
@@ -267,29 +271,29 @@
     <div class="parallax">
         <section id="section_why">
             <div class="container">
-                <div class="worktype_text">
+                <div class="worktype_text wow animate__animated animate__fadeInUpBig">
                     <h1>ПОЧЕМУ НАТЯЖНЫЕ ПОТОЛКИ</h1>
                     <h2>ЛУЧШИЙ ВАРИАНТ?</h2>
                 </div>
                 <div class="container_why">
-                    <div class="video">
+                    <div class="video wow animate__animated animate__fadeInUpBig">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/xPehEEluF48?start=15" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <div class="text">
-                        <div class="container_text"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="white" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                    <div class="text ">
+                        <div class="container_text wow animate__animated animate__fadeInUpBig"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="white" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
                                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                                 <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
                             </svg>
                             <h4>Надёжность и долговечность</h4>
                         </div></br><br>
 
-                        <div class="container_text"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="white" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                        <div class="container_text wow animate__animated animate__fadeInUpBig"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="white" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
                                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                                 <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
                             </svg>
                             <h4>Надёжность и долговечность</h4>
                         </div> <br><br>
-                        <div class="container_text"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="white" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                        <div class="container_text wow animate__animated animate__fadeInUpBig"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="white" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
                                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                                 <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
                             </svg>
@@ -308,55 +312,63 @@
     <div class="parallax">
         <section id="section_why_2">
             <div class="container">
-                <div class="worktype_text">
+                <div class="worktype_text wow animate__animated animate__fadeInUpBig">
                     <h1>НАДЕЖНОЕ СОТРУДНИЧЕСТВО</h1>
                     <h2 style="color:black">С НАШЕЙ КОМПАНИЕЙ</h2>
                 </div>
+
                 <div class="container_worktype_cards">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card wow animate__animated animate__fadeInUpBig " style="width: 18rem;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="#FFCE34" fill="currentColor" class="bi bi-check-circle why2" viewBox="0 0 16 16">
                             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                             <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
                         </svg>
-                        <div class="card-body">
+                        <div class="card-body wow animate__animated animate__fadeInUpBig">
                             <hr>
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5 class="card-title wow animate__animated animate__fadeInUpBig">Card title</h5>
+                            <p class="card-text wow animate__animated animate__fadeInUpBig">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
-                    <div class="card" style="width: 18rem;">
+
+
+                    <div class="card wow animate__animated animate__fadeInUpBig " style="width: 18rem;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="#FFCE34" fill="currentColor" class="bi bi-check-circle why2" viewBox="0 0 16 16">
                             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                             <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
                         </svg>
-                        <div class="card-body">
+                        <div class="card-body wow animate__animated animate__fadeInUpBig">
                             <hr>
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5 class="card-title wow animate__animated animate__fadeInUpBig">Card title</h5>
+                            <p class="card-text wow animate__animated animate__fadeInUpBig">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
-                    <div class="card" style="width: 18rem;">
+
+
+                    <div class="card wow animate__animated animate__fadeInUpBig " style="width: 18rem;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="#FFCE34" fill="currentColor" class="bi bi-check-circle why2" viewBox="0 0 16 16">
                             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                             <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
                         </svg>
-                        <div class="card-body">
+                        <div class="card-body wow animate__animated animate__fadeInUpBig">
                             <hr>
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5 class="card-title wow animate__animated animate__fadeInUpBig">Card title</h5>
+                            <p class="card-text wow animate__animated animate__fadeInUpBig">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
-                    <div class="card" style="width: 18rem;">
+
+                
+                    <div class="card wow animate__animated animate__fadeInUpBig " style="width: 18rem;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="#FFCE34" fill="currentColor" class="bi bi-check-circle why2" viewBox="0 0 16 16">
                             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                             <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
                         </svg>
-                        <div class="card-body">
+                        <div class="card-body wow animate__animated animate__fadeInUpBig">
                             <hr>
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5 class="card-title wow animate__animated animate__fadeInUpBig">Card title</h5>
+                            <p class="card-text wow animate__animated animate__fadeInUpBig">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
+
 
                 </div>
             </div>
@@ -366,68 +378,67 @@
     <div class="parallax">
         <section id="section_questions">
             <div class="container">
-                <div class="worktype_text">
+                <div class="worktype_text wow animate__animated animate__fadeInUpBig">
                     <h1>ЧАСТО ЗАДАВАЕМЫЕ</h1>
                     <h2 style="color:black">ВОПРОСЫ КЛИЕНТОВ</h2>
                 </div>
                 <div class="container_worktype_cards row row-cols-1 row-cols-md-2 g-4">
 
                     <div class="col">
-                        <div class="card" style="width: 36rem;">
-                            <div class="card-head">
+                        <div class="card wow animate__animated animate__fadeInUpBig" style="width: 36rem;">
+                            <div class="card-head ">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="#FFCE34" fill="currentColor" class="bi bi-check-circle " viewBox="0 0 16 16">
                                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                                     <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
                                 </svg>
-                                <h5 class="card-title">Сколько лет существует компания?</h5>
+                                <h5 class="card-title ">Сколько лет существует компания?</h5>
                             </div>
-
-                            <p class="card-text">Наша компания работает на рынке услуг уже 20 лет. Мы работаем с клиентами из России и бывших стран СНГ. Самым важным для нас всегда будет добиться результата, который хочет получить наш клиент, сотрудничая с нашей компанией. </p>
-
+                            <p class="card-text ">Наша компания работает на рынке услуг уже 20 лет. Мы работаем с клиентами из России и бывших стран СНГ. Самым важным для нас всегда будет добиться результата, который хочет получить наш клиент, сотрудничая с нашей компанией. </p>
                         </div>
                     </div>
+
                     <div class="col">
-                        <div class="card" style="width: 36rem;">
-                            <div class="card-head">
+                        <div class="card wow animate__animated animate__fadeInUpBig" style="width: 36rem;">
+                            <div class="card-head ">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="#FFCE34" fill="currentColor" class="bi bi-check-circle " viewBox="0 0 16 16">
                                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                                     <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
                                 </svg>
-                                <h5 class="card-title">Сколько лет существует компания?</h5>
+                                <h5 class="card-title ">Сколько лет существует компания?</h5>
                             </div>
-
-                            <p class="card-text">Наша компания работает на рынке услуг уже 20 лет. Мы работаем с клиентами из России и бывших стран СНГ. Самым важным для нас всегда будет добиться результата, который хочет получить наш клиент, сотрудничая с нашей компанией. </p>
-
+                            <p class="card-text ">Наша компания работает на рынке услуг уже 20 лет. Мы работаем с клиентами из России и бывших стран СНГ. Самым важным для нас всегда будет добиться результата, который хочет получить наш клиент, сотрудничая с нашей компанией. </p>
                         </div>
                     </div>
+
                     <div class="col">
-                        <div class="card" style="width: 36rem;">
-                            <div class="card-head">
+                        <div class="card wow animate__animated animate__fadeInUpBig" style="width: 36rem;">
+                            <div class="card-head ">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="#FFCE34" fill="currentColor" class="bi bi-check-circle " viewBox="0 0 16 16">
                                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                                     <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
                                 </svg>
-                                <h5 class="card-title">Сколько лет существует компания?</h5>
+                                <h5 class="card-title ">Сколько лет существует компания?</h5>
                             </div>
-
-                            <p class="card-text">Наша компания работает на рынке услуг уже 20 лет. Мы работаем с клиентами из России и бывших стран СНГ. Самым важным для нас всегда будет добиться результата, который хочет получить наш клиент, сотрудничая с нашей компанией. </p>
-
+                            <p class="card-text ">Наша компания работает на рынке услуг уже 20 лет. Мы работаем с клиентами из России и бывших стран СНГ. Самым важным для нас всегда будет добиться результата, который хочет получить наш клиент, сотрудничая с нашей компанией. </p>
                         </div>
                     </div>
+
                     <div class="col">
-                        <div class="card" style="width: 36rem;">
-                            <div class="card-head">
+                        <div class="card wow animate__animated animate__fadeInUpBig" style="width: 36rem;">
+                            <div class="card-head ">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="#FFCE34" fill="currentColor" class="bi bi-check-circle " viewBox="0 0 16 16">
                                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                                     <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
                                 </svg>
-                                <h5 class="card-title">Сколько лет существует компания?</h5>
+                                <h5 class="card-title ">Сколько лет существует компания?</h5>
                             </div>
-
-                            <p class="card-text">Наша компания работает на рынке услуг уже 20 лет. Мы работаем с клиентами из России и бывших стран СНГ. Самым важным для нас всегда будет добиться результата, который хочет получить наш клиент, сотрудничая с нашей компанией. </p>
-
+                            <p class="card-text ">Наша компания работает на рынке услуг уже 20 лет. Мы работаем с клиентами из России и бывших стран СНГ. Самым важным для нас всегда будет добиться результата, который хочет получить наш клиент, сотрудничая с нашей компанией. </p>
                         </div>
                     </div>
+              
+
+
+                  
 
                 </div>
 
@@ -439,11 +450,11 @@
     <div class="parallax">
         <section id="section_reviews">
             <div class="container">
-                <div class="worktype_text">
+                <div class="worktype_text wow animate__animated animate__fadeInUpBig">
                     <h1>ОТЗЫВЫ</h1>
                     <h2 style="color:black">НАШИХ КЛИЕНТОВ</h2>
                 </div>
-                <div class="slider slider-2">
+                <div class="slider wow animate__animated animate__fadeInUpBig slider-2">
                     <div class="slider__wrapper">
                         <div class="slider__items">
                             <div class="slider__item">
@@ -504,7 +515,7 @@
     <div class="parallax">
         <section id="section_offer">
             <div class="container">
-                <div class="container_form">
+                <div class="container_form wow animate__animated animate__fadeInUpBig">
                     <form action="form-handler.php" method="POST">
                         <div class="worktype_text">
                             <h2 style="color:black">ПОЗВОНИТЕ СЕЙЧАС И ПОЛУЧИТЕ</h2>
@@ -528,14 +539,14 @@
             </div>
         </section>
     </div>
-<!---section objects--->
-        <section id="section_objects">
-            <div class="container">
-            <div class="worktype_text">
-                    <h1>ОБЪЕКТЫ</h1>
-                    <h2 style="color:black">ГАЛЕРЕЯ</h2> 
+    <!---section objects--->
+    <section id="section_objects">
+        <div class="container">
+            <div class="worktype_text wow animate__animated animate__fadeInUpBig">
+                <h1>ОБЪЕКТЫ</h1>
+                <h2 style="color:black">ГАЛЕРЕЯ</h2>
             </div>
-            <div class="container objects" id="container_about">
+            <div class="container objects wow animate__animated animate__fadeInUpBig" id="container_about">
                 <div class="spiner_photo">
                     <div class="slider slider-3 ">
                         <div class="slider__wrapper">
@@ -560,7 +571,7 @@
 
                 </div>
                 <div class="text_about">
-                <br>
+                    <br>
                     <h2> Industriālais alpīnisms</h2>
                     <br>
                     <p>
@@ -574,7 +585,7 @@
 
             <hr>
 
-            <div class="container objects" id="container_about">
+            <div class="container objects wow animate__animated animate__fadeInUpBig" id="container_about">
                 <div class="spiner_photo">
                     <div class="slider slider-4 ">
                         <div class="slider__wrapper">
@@ -599,7 +610,7 @@
 
                 </div>
                 <div class="text_about">
-                <br>
+                    <br>
                     <h2> Industriālais alpīnisms</h2>
                     <br>
                     <p>
@@ -611,8 +622,8 @@
 
             </div>
 
-<hr>
-            <div class="container objects" id="container_about">
+            <hr>
+            <div class="container objects wow animate__animated animate__fadeInUpBig" id="container_about">
                 <div class="spiner_photo">
                     <div class="slider slider-5 ">
                         <div class="slider__wrapper">
@@ -649,8 +660,8 @@
 
             </div>
 
-            </div>
-        </section>
+        </div>
+    </section>
 
 
     </div>
