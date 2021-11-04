@@ -6,6 +6,7 @@ include "language.php";
 <html lang="en">
 
 <head>
+<link rel="shortcut icon" href="/wall-img/favicon.png" type="image/png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -138,8 +139,8 @@ include "language.php";
             <a class="py-2 d-none d-md-inline-block" href="#section_why_2">КЛИЕНТЫ</a>
             <a class="py-2 d-none d-md-inline-block" href="#section_reviews">ОТЗЫВЫ</a>
             <a class="py-2 d-none d-md-inline-block" href="#section_questions">ВОПРОСЫ</a>
-            <a class="py-2 d-none d-md-inline-block" href="#">КАРЬЕРА</a>
-            <a class="py-2 d-none d-md-inline-block" href="#">КОНТАКТЫ</a>
+            <a class="py-2 d-none d-md-inline-block" href="#section_career">КАРЬЕРА</a>
+            <a class="py-2 d-none d-md-inline-block" href="#section_contacts">КОНТАКТЫ</a>
 
         </nav>
     </header>
@@ -245,7 +246,7 @@ include "language.php";
                         </div>
                         <div class="mb-3">
                             <input type="tel" class="form-control" required placeholder="Телефон *" name="phone" id="exampleInputPassword1">
-                            <input type="hidden" name="form" value="min">
+                            <input type="hidden" name="form" value="request">
                         </div>
                         <div class="mb-3">
                             <textarea type="text" class="form-control" required placeholder="Краткое описание запроса" name="description" id="ordering_description"></textarea>
@@ -515,7 +516,7 @@ include "language.php";
                             </div>
                             <div class="mb-3">
                                 <input type="mail" class="form-control" placeholder="Е-mail" name="mail" id="exampleInputPassword1">
-                                <input type="hidden" name="form" value="15pass">
+                                <input type="hidden" name="form" value="request">
                             </div>
                             <button type="submit" class="btn btn-secondary" style=" background-color: #353333; border-color: #353333;;">Отправить заявку</button>
                     </form>
@@ -656,7 +657,7 @@ include "language.php";
                             </div>
                             <div class="mb-3">
                                 <input type="mail" class="form-control career-input" placeholder="Е-mail" name="mail" id="exampleInputPassword1">
-                                <input type="hidden" name="form" value="15pass">
+                                <input type="hidden" name="form" value="career">
                             </div>
                             <div class="mb-3">
                                 <textarea type="text" class="form-control" required placeholder="Краткое описаниe" name="description" id="career_description"></textarea>
@@ -666,7 +667,7 @@ include "language.php";
                     </div>
                     <div class="offer-img">
 
-                    
+        
                     </div>
                     
                 </div>

@@ -459,7 +459,7 @@ img[tabindex="0"]:focus {
   margin: auto;
   box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(210,210,210,.4);
 }
-img[tabindex="0"]:focus,  /* убрать строку, если не нужно, чтобы при клике на увеличенное фото, оно возвращалось в исходное состояние */
+img[tabindex="0"]:focus,  
 img[tabindex="0"]:focus ~ * {
   pointer-events: none;
   cursor: zoom-out;
@@ -473,7 +473,15 @@ img[tabindex="0"]:focus ~ * {
   width: 450px;
   height: 300px;
   display: inline-block;
-  background-color: brown;
+  background-image: url("/wall-img/shutterstock_400222735.jpg");
+}
+.offer-img::before{
+  content: "";
+
+  width: 450px;
+  height: 300px;
+  background-color:  #ffee035d;;
+  position: absolute;
 }
 .offer-input{
   display:inline-block;
