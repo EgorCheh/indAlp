@@ -6,11 +6,11 @@ include "language.php";
 <html lang="en">
 
 <head>
-<link rel="shortcut icon" href="/wall-img/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="/wall-img/favicon.png" type="image/png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ind-Alp</title>
 
 
     <link rel="stylesheet" href="simple-adaptive-slider.min.css">
@@ -51,7 +51,7 @@ include "language.php";
 
         var modal = document.getElementById("myModal");
 
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
+
         var img = document.getElementById("myImg");
         var modalImg = document.getElementById("img01");
         var captionText = document.getElementById("caption");
@@ -61,10 +61,9 @@ include "language.php";
             captionText.innerHTML = this.alt;
         }
 
-        // Get the <span> element that closes the modal
+
         var span = document.getElementsByClassName("close")[0];
 
-        // When the user clicks on <span> (x), close the modal
         span.onclick = function() {
             modal.style.display = "none";
         }
@@ -137,7 +136,6 @@ include "language.php";
             <a class="py-2 d-none d-md-inline-block" href="#section_worktype">УСЛУГИ</a>
             <a class="py-2 d-none d-md-inline-block" href="#section_objects">ГАЛЕРЕЯ</a>
             <a class="py-2 d-none d-md-inline-block" href="#section_why_2">КЛИЕНТЫ</a>
-            <a class="py-2 d-none d-md-inline-block" href="#section_reviews">ОТЗЫВЫ</a>
             <a class="py-2 d-none d-md-inline-block" href="#section_questions">ВОПРОСЫ</a>
             <a class="py-2 d-none d-md-inline-block" href="#section_career">КАРЬЕРА</a>
             <a class="py-2 d-none d-md-inline-block" href="#section_contacts">КОНТАКТЫ</a>
@@ -172,6 +170,9 @@ include "language.php";
 
 
     </div>
+
+    <div class="first_space"></div>
+
     <!-- section  about-->
 
     <div class="parallax" id="first_parallax"></div>
@@ -184,7 +185,7 @@ include "language.php";
                     <br>
                     <h3> INDUSTRIĀLAIS ALPĪNISMS SIA </h3>
                     <br>
-                    <p>
+                    
                     <div class="spiner_photo">
                         <div class="slider  slider-1 ">
                             <div class="slider__wrapper">
@@ -205,24 +206,34 @@ include "language.php";
                         </div>
 
                     </div>
-                    Латвийская компания, предлагающая многоцелевые решения по методу промышленного альпинизма для широкого спектра услуг - работы на высоте.
-
-
-                    Наш обширный отраслевой опыт в сочетании с первоклассной командой гарантирует, что мы можем предоставить нашим клиентам услуги в области различных решений по работам на высоте, от стадии строительства до контрактов на ежегодное техническое обслуживание.
-
-                    Компания INDUSTRIĀLAIS ALPĪNISMS SIA работает с 2012 года, с постоянным ростом численности персонала и ресурсов, с хорошей репутацией и многими реализованными проектами.
-
-
-                    Наша основная цель - создать комплексную услугу для наших клиентов, предоставляя им первоклассные услуги на высоте; от осмотра, мойки фасада, строительных работ, установки кондиционеров/ баннеров, очистки крыш, фасадов, общего технического обслуживания до годовых договоров на техническое обслуживание.
-
-                    Мы постоянно нанимаем и ищем новые таланты, которые помогают нам рости.
-
-                    Наши клиенты - это наш имидж и репутация на рынке.
-
-                    Наше миссия - предоставлять нашим клиентам самые высокие стандарты обслуживания, учитывая все меры безопасности в любое время, независимо от размера работы.
+                    <div class="container-about-text">
+                    <p>
+                    SIA INDUSTRIĀLAIS ALPĪNISMS, Латвийская компания, предлагающая многоцелевые решения по методу
+                    промышленного альпинизма для широкого спектра услуг - работы на высоте.
                     </p>
+                    <p>Наш обширный отраслевой опыт в сочетании с первоклассной командой гарантирует, что мы можем
+                        предоставить нашим клиентам услуги в области различных решений по работам на высоте, от стадии
+                        строительства до контрактов на ежегодное техническое обслуживание.</p>
+                    <p>
+                        Компания INDUSTRIĀLAIS ALPĪNISMS SIA работает с 2012 года, с постоянным ростом численности
+                        персонала и ресурсов, с хорошей репутацией и многими реализованными проектами.
+                    </p>
+                  
+                    <p>Наша основная цель - создать комплексную услугу для наших клиентов, предоставляя им первоклассные
+                        услуги на высоте; от осмотра, мойки фасада, строительных работ, установки кондиционеров, баннеров, очистки
+                        крыш, фасадов, общего технического обслуживания - до годовых договоров на техническое обслуживание.</p>
+                    
+                    <p>Мы постоянно нанимаем и ищем новые таланты, которые помогают нам рости.</p>
+                    
+                    <p>Наши клиенты - это наш имидж и репутация на рынке.</p>
+                    
+                    <p>Наше миссия - предоставлять нашим клиентам самые высокие стандарты обслуживания, учитывая все
+                        меры безопасности в любое время, независимо от размера работы.</p>
+                    
+
                     <p><strong>МЫ ИМЕЕМ ОПЫТ С БОЛЬШИМИ КОММЕРЧЕСКИМИ ОБЪЕКТАМИ </strong>
                     </p>
+                    </div>
                 </div>
 
             </div>
@@ -270,57 +281,58 @@ include "language.php";
                 </div>
                 <div class="container_worktype_cards">
                     <div class="card" style="width: 21rem;">
-                        <img src="/wall-img/fasad.jpg" class="card-img-top" alt="...">
+                        <img src="/wall-img/fasad.jpg" class="card-img-top" alt="..." width="400" height="400">
                         <div class="card-body">
-                            <h5 class="card-title">Фасадные работы</h5>
+                            <h5 class="card-title">ФАСАДНЫЕ РАБОТЫ</h5>
                             <p class="card-text">
-                                <br>Ремонт фасадов
-                                <br>Косметический ремонт фасадов
-                                <br>Капитальный ремонт фасадов
-                                <br>Штукатурка фасада
-                                <br>Ремонт штукатурки фасада
-                                <br>Ремонт кирпичной кладки
-                                <br>Отделка монолитных поясов
-                                <br>Ремонт трещин на фасаде
-                                <br>Герметизация межпанельных швов
-                                <br>Герметизация окон
-                                <br>Покраска фасада
-                                <br>Покраска кровли
-                                <br>Покраска пожарных лестниц
-                                <br>Покраска металлоконструкций
-                                <br>Покраска дымовых труб
-                                <br>Покраска промышленных объектов и помещений
-                                <br>Покраска водонапорных башен
-                                <br>Покраска промышленных объектов и помещений
+                                <br>- Ремонт фасадов
+                                <br>- Косметический ремонт фасадов
+                                <br>- Капитальный ремонт фасадов
+                                <br>- Штукатурка фасада
+                                <br>- Ремонт штукатурки фасада
+                                <br>- Ремонт кирпичной кладки
+                                <br>- Отделка монолитных поясов
+                                <br>- Ремонт трещин на фасаде
+                                <br>- Герметизация межпанельных швов
+                                <br>- Герметизация окон
+                                <br>- Покраска фасада
+                                <br>- Покраска кровли
+                                <br>- Покраска пожарных лестниц
+                                <br>- Покраска металлоконструкций
+                                <br>- Покраска дымовых труб
+                                <br>- Покраска промышленных объектов и помещений
+                                <br>- Покраска водонапорных башен
+                                <br>- Покраска промышленных объектов и помещений
                             </p>
 
                         </div>
                     </div>
                     <div class="card" style="width: 21rem;">
-                        <img src="/wall-img/okna.jpg" class="card-img-top" alt="...">
+                        <img src="/wall-img/okna.jpg" class="card-img-top" alt="..." width="400" height="400">
                         <div class="card-body">
-                            <h5 class="card-title">Клининговые услуги</h5>
-                            <p class="card-text">Мойка окон
-                                <br>Мойка фасадов
-                                <br>Обеспыливание балок
-                                <br>Мойка цехов промышленных
+                            <h5 class="card-title">КЛИНИНГОВЫЕ УСЛУГИ</h5>
+                            <p class="card-text">
+                                <br>- Мойка окон
+                                <br>- Мойка фасадов
+                                <br>- Обеспыливание балок
+                                <br>- Мойка цехов промышленных
                             </p>
 
                         </div>
                     </div>
                     <div class="card" style="width: 21rem;">
-                        <img src="/wall-img/drygoe.jpg" class="card-img-top" alt="...">
+                        <img src="/wall-img/drygoe.jpg" class="card-img-top" alt="..." width="400" height="400">
                         <div class="card-body">
-                            <h5 class="card-title">Другие работы </h5>
+                            <h5 class="card-title">ДРУГИЕ РАБОТЫ</h5>
                             <p class="card-text">
-                                <br> Монтаж кондиционеров
-                                <br>Монтаж водостоков
-                                <br>Монтаж/демонтаж баннеров
-                                <br>Удаление деревьев
-                                <br>Обрезка ветвей деревьев
-                                <br>Уборка снега с крыш
-                                <br>Удаление сосулек
-                                <br>Очистка водостоков и желобов
+                                <br>- Монтаж кондиционеров
+                                <br>- Монтаж водостоков
+                                <br>- Монтаж/демонтаж баннеров
+                                <br>- Удаление деревьев
+                                <br>- Обрезка ветвей деревьев
+                                <br>- Уборка снега с крыш
+                                <br>- Удаление сосулек
+                                <br>- Очистка водостоков и желобов
                             </p>
 
                         </div>
@@ -340,40 +352,72 @@ include "language.php";
 
                 </div>
                 <div class="container_why">
+
                     <div class="text">
-                        <div class="container_text"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="white" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
-                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
-                            </svg>
-                            <h4>Профессионализм</h4>
-                            <h5>Мы подготовим предложение по оптимальному решению всех пожеланий. Мы всегда считаем приоритетными интересы заказчика, и нам доверяют на протяжении 10 лет. </h5></br><br>
-                        </div>
-                        <div class="container_text"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="white" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
-                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
-                            </svg>
-                            <h4>Скорость</h4>
-                            <h5>Мы способны быстро реагировать на Ваш запрос. И делаем свою работу в установленные сроки. </h5></br><br>
-                        </div>
-                        <div class="container_text"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="white" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
-                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
-                            </svg>
-                            <h4>Надежность</h4>
-                            <h5>Работаем, соблюдая все меры безопасности. </h5></br><br>
-                        </div>
-                        <div class="container_text"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="white" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
-                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
-                            </svg>
-                            <h4>Гибкость </h4>
-                            <h5>Находим решение наиболее подходящее под Ваш запрос. </h5></br><br>
-                        </div>
 
+                        <div class="row">
+                            <div class="col">
+                                <div class="container_text"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="white" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                        <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                    </svg>
+                                    <h4>Надежность</h4>
+                                    <h5> <strong style="color:#ffd034;">95%</strong> повторных обращений от клиентов. Работаем, соблюдая все меры безопасности. </h5></br><br>
+                                </div>
+                            </div>
 
+                            <div class="col">
+                                <div class="container_text"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="white" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                        <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                    </svg>
+                                    <h4>Опыт</h4>
+                                    <h5><strong style="color:#ffd034;">10 лет</strong> на рынке <strong style="color:#ffd034;">950 +</strong> реализованных контрактов.</h5></br><br>
+                                </div>
+                            </div>
+
+                            <div class="col-5">
+                                <div class="container_text"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="white" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                        <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                    </svg>
+                                    <h4>Скорость </h4>
+                                    <h5>Мы способны быстро реагировать на Ваш запрос. И делаем свою работу в установленные сроки.</h5></br><br>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="container_text"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="white" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                            <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                        </svg>
+                                        <h4>Результативность</h4>
+                                        <h5><strong style="color:#ffd034;">0</strong> незавершенных проектов. </h5></br><br>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="container_text"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="white" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                            <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                        </svg>
+                                        <h4>Гибкость </h4>
+                                        <h5>Находим решение наиболее подходящее под Ваш запрос. </h5></br><br>
+                                    </div>
+                                </div>
+                                <div class="col-5" id="col-why-proff">
+                                    <div class="container_text"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="white" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                            <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                        </svg>
+                                        <h4>Профессионализм </h4>
+                                        <h5>Мы подготовим предложение по оптимальному решению всех пожеланий. Мы всегда считаем приоритетными интересы заказчика, и нам доверяют на протяжении <strong style="color:#ffd034;">10 лет</strong> .</h5></br><br>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
         </section>
     </div>
 
@@ -388,38 +432,38 @@ include "language.php";
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                <img src="/clients-img/220px-Olainfarm_logo.svg.png" alt="Cinque Terre" width="190" height="120">
+                                <img src="/clients-img/220px-Olainfarm_logo.svg.png" alt="Cinque Terre" width="140" height="70">
                             </div>
                             <div class="col">
-                                <img src="/clients-img/img_58b031a30d2071.63580347.jpg.webp" alt="Cinque Terre" width="390" height="130">
+                                <img src="/clients-img/img_58b031a30d2071.63580347.jpg.webp" alt="Cinque Terre" width="340" height="80">
                             </div>
                             <div class="col">
-                                <img src="/clients-img/img_59688d076fd319.67987052.png.webp" alt="Cinque Terre" width="190" height="90">
+                                <img src="/clients-img/img_59688d076fd319.67987052.png.webp" alt="Cinque Terre" width="120" height="40">
                             </div>
                             <div class="col">
-                                <img src="/clients-img/kuber-logo.png" alt="Cinque Terre" width="190" height="120">
+                                <img src="/clients-img/kuber-logo.png" alt="Cinque Terre" width="140" height="70">
                             </div>
                         </div>
                         <div class="row" style="width: 90%; margin-left: 50px;">
                             <div class="col">
-                                <img src="/clients-img/img_58afa85ff0fe80.91654338.png" alt="Cinque Terre" width="350" height="160">
+                                <img src="/clients-img/img_58afa85ff0fe80.91654338.png" alt="Cinque Terre" width="300" height="110">
                             </div>
                             <div class="col">
-                                <img src="/clients-img/logo@2x_54e2d.png" alt="Cinque Terre" width="250" height="180">
+                                <img src="/clients-img/logo@2x_54e2d.png" alt="Cinque Terre" width="200" height="130">
                             </div>
                             <div class="col">
-                                <img src="/clients-img/torensberg-logo-5e582921a2092-large.jpg" alt="Cinque Terre" width="260" height="150">
+                                <img src="/clients-img/torensberg-logo-5e582921a2092-large.jpg" alt="Cinque Terre" width="210" height="100">
                             </div>
                         </div>
                         <div class="row " style="margin-bottom: 30px;">
                             <div class="col">
-                                <img src="/clients-img/rs_logo_300_0.jpg" alt="Cinque Terre" width="350" height="140">
+                                <img src="/clients-img/rs_logo_300_0.jpg" alt="Cinque Terre" width="300" height="90">
                             </div>
                             <div class="col">
-                                <img src="/clients-img/700x700_civinity_thumbnail.png" alt="Cinque Terre" width="250" height="120">
+                                <img src="/clients-img/700x700_civinity_thumbnail.png" alt="Cinque Terre" width="200" height="70">
                             </div>
                             <div class="col">
-                                <img src="/clients-img/Снимок экрана 2021-11-02 в 00.05.09.png" alt="Cinque Terre" width="190" height="120">
+                                <img src="/clients-img/Снимок экрана 2021-11-02 в 00.05.09.png" alt="Cinque Terre" width="140" height="70">
                             </div>
                         </div>
 
@@ -439,8 +483,8 @@ include "language.php";
                 <div class="container_worktype_cards row row-cols-1 row-cols-md-2 g-4">
 
                     <div class="col">
-                        <div class="card" style="width: 36rem;">
-                            <div class="card-head">
+                        <div class="card qest-card" style="width: 36rem; height: 430px;">
+                            <div class="card-head qest">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="#FFCE34" fill="currentColor" class="bi bi-check-circle " viewBox="0 0 16 16">
                                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                                     <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
@@ -448,12 +492,12 @@ include "language.php";
                                 <h5 class="card-title">На какой высоте могут работать промышленные альпинисты?</h5>
                             </div>
 
-                            <p class="card-text">Высота проведения альпинистских мероприятий ограничивается лишь одним фактором — длиной веревки. Имея в распоряжении профессиональное снаряжение и соответствующую экипировку, альпинисты могут работать на сооружениях любой этажности. С точки зрения безопасности, чем ниже конструкция, тем меньше времени понадобится высотнику для спуска при возникновении опасной ситуации. Поэтому для альпиниста ключевую роль играет не высота конструкции, а расстояние от места крепления снаряжения до зоны проведения работ.</p>
+                            <p class="card-text qest">Высота проведения альпинистских мероприятий ограничивается лишь одним фактором — длиной веревки. Имея в распоряжении профессиональное снаряжение и соответствующую экипировку, альпинисты могут работать на сооружениях любой этажности. С точки зрения безопасности, чем ниже конструкция, тем меньше времени понадобится высотнику для спуска при возникновении опасной ситуации. Поэтому для альпиниста ключевую роль играет не высота конструкции, а расстояние от места крепления снаряжения до зоны проведения работ.</p>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card" style="width: 36rem;">
-                            <div class="card-head">
+                        <div class="card qest-card" style="width: 36rem; height: 430px;">
+                            <div class="card-head qest">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="#FFCE34" fill="currentColor" class="bi bi-check-circle " viewBox="0 0 16 16">
                                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                                     <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
@@ -461,12 +505,12 @@ include "language.php";
                                 <h5 class="card-title">Влияют ли погодные условия на проведение работ?</h5>
                             </div>
 
-                            <p class="card-text">Погода — самый важный фактор в промышленном альпинизме. Именно от нее в большей степени зависит качество, скорость и безопасность высотных работ. Высотные мероприятия не проводятся при дожде, при сильном ветре, при низкой (-25) температуре воздуха. К тому же следует взять во внимание характер работ. Так, например, покраску, мытье окон или монтаж необходимо осуществлять, учитывая особенности технологического процесса и рекомендации по проведению той или иной процедуры.</p>
+                            <p class="card-text qest">Погода — самый важный фактор в промышленном альпинизме. Именно от нее в большей степени зависит качество, скорость и безопасность высотных работ. Высотные мероприятия не проводятся при дожде, при сильном ветре, при низкой (-25) температуре воздуха. К тому же следует взять во внимание характер работ. Так, например, покраску, мытье окон или монтаж необходимо осуществлять, учитывая особенности технологического процесса и рекомендации по проведению той или иной процедуры.</p>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card" style="width: 36rem;">
-                            <div class="card-head">
+                        <div class="card qest-card" style="width: 36rem; height: 350px;">
+                            <div class="card-head qest">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="#FFCE34" fill="currentColor" class="bi bi-check-circle " viewBox="0 0 16 16">
                                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                                     <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
@@ -474,12 +518,12 @@ include "language.php";
                                 <h5 class="card-title">Как узнать стоимость работ? </h5>
                             </div>
 
-                            <p class="card-text">Рассчитать стоимость работ самостоятельно не возможно. Разумнее набрать телефон, указанный на нашем сайте, и вызвать профессионала. Для точного определения стоимости работ необходимо понимать многие тонкости самого процесса, на месте оценить масштаб предстоящих мероприятий и особенности здания. Выезд консультанта на объект следует обговорить заранее, а затем обеспечить доступ на место проведения работ.</p>
+                            <p class="card-text qest">Рассчитать стоимость работ самостоятельно не возможно. Разумнее набрать телефон, указанный на нашем сайте, и вызвать профессионала. Для точного определения стоимости работ необходимо понимать многие тонкости самого процесса, на месте оценить масштаб предстоящих мероприятий и особенности здания. Выезд консультанта на объект следует обговорить заранее, а затем обеспечить доступ на место проведения работ.</p>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card" style="width: 36rem;">
-                            <div class="card-head">
+                        <div class="card qest-card" style="width: 36rem; height: 350px;">
+                            <div class="card-head qest">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="#FFCE34" fill="currentColor" class="bi bi-check-circle " viewBox="0 0 16 16">
                                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                                     <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
@@ -487,7 +531,7 @@ include "language.php";
                                 <h5 class="card-title">Можете ли вы удалять деревья, ветви деревьев? </h5>
                             </div>
 
-                            <p class="card-text">Да, конечно! Мы удаляем деревья методом промышленного альпинизма, без использования спецтехники: автовышки, автокрана. Наш метод ничем не уступает спиливанию деревьев с автовышки, а во многом и превосходит: экономия на аренде автовышки, возможность работы в стесненных и труднодоступных местах. </p>
+                            <p class="card-text qest">Да, конечно! Мы удаляем деревья методом промышленного альпинизма, без использования спецтехники: автовышки, автокрана. Наш метод ничем не уступает спиливанию деревьев с автовышки, а во многом и превосходит: экономия на аренде автовышки, возможность работы в стесненных и труднодоступных местах. </p>
                         </div>
                     </div>
 
@@ -574,7 +618,7 @@ include "language.php";
                         <img src="/gallery-img/v_-2.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
                     </div>
                     <div class="col">
-                        <img src="/gallery-img/v_-20.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0" >
+                        <img src="/gallery-img/v_-20.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
                     </div>
                     <div class="col">
                         <img src="/gallery-img/v_-21.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
@@ -643,7 +687,7 @@ include "language.php";
                 </div>
                 <div class="container">
                     <h5 class="career-discription" style="color:black">
-                        Если вы думаете, что у вас есть все, что нужно для высотных работ, подайте заявку здесь. Заполните онлайн-форму, загрузите свое резюме, и мы свяжемся с вами, если будут подходящие вакансии.
+                        Заполните онлайн-форму, загрузите свое резюме, и мы свяжемся с вами, если будут подходящие вакансии.
                     </h5>
                     <div class="offer-input">
                         <form action="form-handler.php" style="width: 450px;" method="POST">
@@ -667,9 +711,9 @@ include "language.php";
                     </div>
                     <div class="offer-img">
 
-        
+
                     </div>
-                    
+
                 </div>
             </div>
         </section>
