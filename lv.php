@@ -59,5 +59,33 @@ $_LANG = array(
     <br>- Lāsteku nosišana
     <br>- Noteku un notekcauruļu tīrīšana
     ',
+
+    'why-title' => 'Kāpēc mēs?',
+    'why-content-title-1' => 'Uzticamība',
+    'why-content-text-1' => 'atkārtotu pieprasījumu no klientiem. Strādājam, ievērojot visus drošības pasākumus.',
+    'why-content-title-2' => 'Pieredze',
+    'why-content-text-2' => '10 gadi</strong> tirgū <strong style="color:#ffd034;">950 +</strong> ealizēti līgumi.',
+    'why-content-title-3' => 'Ātrums',
+    'why-content-text-3' => 'Mēs ātri reaģējam uz Jūsu pieprasījumu. Un mēs darām savu darbu noteiktajos termiņos.',
+    'why-content-title-4' => 'Efektivitāte',
+    'why-content-title-5' => 'Elastīgums',
+    'why-content-text-5' => 'Mēs atrodam Jūsu pieprasījumam piemērotāko risinājumu.',
+    'why-content-title-6' => 'Profesionalitāte',
+    'why-content-text-6' => 'Sagatavosim piedāvājumu optimālajam visu vēlmju risinājumam. Mūsu prioritāte vienmēr ir klienta intereses, un mums uzticas jau vairāk nekā <strong style="color:#ffd034;">10 gadus</strong> .',
+
+    'why2-title' => 'Klienti',
+
+    'questions-title' => 'Klientu bieži',
+    'questions-subtitle' => 'uzdotie jautājumi',
+    'questions-question-1' => 'Kādā augstumā var strādāt industriālie alpīnisti?',
+    'questions-answer-1' => 'Alpīnistu darbības augstumu ierobežo tikai viens faktors – virves garums. Alpīnistu rīcībā ir profesionāls un atbilstošs aprīkojums, tāpēc viņi var strādāt uz jebkura stāvu skaita konstrukcijām. No drošības viedokļa, jo zemāka ir konstrukcija, jo mazāk laika alpīnistam būs nepieciešams, lai bīstamās situācijas gadījumā nokāptu. Tāpēc alpīnistam galveno lomu spēlē nevis konstrukcijas augstums, bet gan attālums no aprīkojuma piestiprināšanas vietas līdz darba vietai.',
+    'questions-question-2' => 'Vai laika apstākļi ietekmē darbu?',
+    'questions-answer-2' => 'Industriālajā alpīnismā laikapstākļi ir vissvarīgākais faktors. Tieši no tiem lielā mērā ir atkarīga augstuma darbu kvalitāte, ātrums un drošība. Augstuma darbi netiek rīkoti lietus, stipra vēja, zemas (-25) gaisa temperatūras gadījumā. Turklāt jāņem vērā darba raksturs. Piemēram, logu krāsošana, mazgāšana vai montāža jāveic, ņemot vērā tehnoloģiskā procesa īpatnības un ieteikumus konkrētas procedūras veikšanai.',
+    'questions-question-3' => 'Kā uzzināt darbu samaksu? ',
+    'questions-answer-3' => 'Darba izmaksas pašiem nav iespējams aprēķināt. Prātīgāk ir piezvanīt mūsu vietnē norādīto tālruņa numuru un izsaukt profesionāli. Lai precīzi noteiktu darba izmaksas, ir jāsaprot daudzi procesa smalkumi, jānovērtē darbību mērogs un ēkas īpatnības uz vietas. Konsultanta izbraukums uz objektu ir jāapspriež iepriekš, un pēc tam jānodrošina piekļuve darba vietai.',
+    'questions-question-4' => 'Vai jūs varat noņemt kokus, koku zarus?  ',
+    'questions-answer-4' => 'Jā, protams! Novācam kokus ar industriālā alpīnismu metodi, neizmantojot speciālu tehniku: pacēlāju platformas, autoceltņus. Mūsu metode ne ar ko nav sliktāka par koku zāģēšanu no pacēlāju platformas, un lielā mērā tā pat ir labāka: ietaupījums uz pacēlāju platformas nomas, iespēja strādāt šaurās un grūti sasniedzamās vietās.',
+
+
 );
 
