@@ -519,20 +519,20 @@ if ($_GET['land'] == null || $_GET['land'] == 'lv') {
                 <div class="container_form">
                     <form action="form-handler.php" method="POST">
                         <div class="worktype_text">
-                            <h2 style="color:black">НАПИШИТЕ НАМ СВОЙ ЗАПРОС </h2>
+                            <h2 style="color:black"><?php echo $_LANG['offer-title']; ?></h2>
                             <br>
                             <div class="mb-3">
 
-                                <input type="text" class="form-control" placeholder="Имя" name="name" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <input type="text" class="form-control" placeholder="<?php echo $_LANG['form-name']; ?>" name="name" id="exampleInputEmail1" aria-describedby="emailHelp">
                             </div>
                             <div class="mb-3">
-                                <input type="tel" class="form-control" required placeholder="Телефон *" name="phone" id="exampleInputPassword1">
+                                <input type="tel" class="form-control" required placeholder="<?php echo $_LANG['form-tel']; ?>" name="phone" id="exampleInputPassword1">
                             </div>
                             <div class="mb-3">
                                 <input type="mail" class="form-control" placeholder="Е-mail" name="mail" id="exampleInputPassword1">
                                 <input type="hidden" name="form" value="request">
                             </div>
-                            <button type="submit" class="btn btn-secondary" style=" background-color: #353333; border-color: #353333;;">Отправить заявку</button>
+                            <button type="submit" class="btn btn-secondary" style=" background-color: #353333; border-color: #353333;;"><?php echo $_LANG['form-submit']; ?></button>
                     </form>
                 </div>
 
@@ -544,8 +544,8 @@ if ($_GET['land'] == null || $_GET['land'] == 'lv') {
     <section id="section_objects">
         <div class="container">
             <div class="worktype_text">
-                <h1>ОБЪЕКТЫ</h1>
-                <h2 style="color:black">ГАЛЕРЕЯ</h2>
+                <h1><?php echo $_LANG['objects-title']; ?></h1>
+                <h2 style="color:black"><?php echo $_LANG['objects-subtitle']; ?></h2>
             </div>
 
             <div class="container">
@@ -652,31 +652,31 @@ if ($_GET['land'] == null || $_GET['land'] == 'lv') {
         <section id="section_career">
             <div class="container">
                 <div class="worktype_text">
-                    <h1>КАРЬЕРА</h1>
-                    <h2 style="color:black">РАБОТА У НАС </h2>
+                    <h1><?php echo $_LANG['career-title']; ?></h1> 
+                    <h2 style="color:black"> <?php echo $_LANG['career-subtitle']; ?></h2>
                 </div>
                 <div class="container">
                     <h5 class="career-discription" style="color:black">
-                        Заполните онлайн-форму, загрузите свое резюме, и мы свяжемся с вами, если будут подходящие вакансии.
+                    <?php echo $_LANG['career-text'];?>
                     </h5>
                     <div class="offer-input">
                         <form action="form-handler.php" style="width: 450px;" method="POST">
 
                             <div class="mb-3">
 
-                                <input type="text" class="form-control career-input" placeholder="Имя" name="name" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <input type="text" class="form-control career-input" placeholder="<?php echo $_LANG['form-name']; ?>" name="name" id="exampleInputEmail1" aria-describedby="emailHelp">
                             </div>
                             <div class="mb-3">
-                                <input type="tel" class="form-control career-input" required placeholder="Телефон *" name="phone" id="exampleInputPassword1">
+                                <input type="tel" class="form-control career-input" required placeholder="<?php echo $_LANG['form-tel']; ?>" name="phone" id="exampleInputPassword1">
                             </div>
                             <div class="mb-3">
                                 <input type="mail" class="form-control career-input" placeholder="Е-mail" name="mail" id="exampleInputPassword1">
                                 <input type="hidden" name="form" value="career">
                             </div>
                             <div class="mb-3">
-                                <textarea type="text" class="form-control" required placeholder="Краткое описаниe" name="description" id="career_description"></textarea>
+                                <textarea type="text" class="form-control" required placeholder="<?php echo $_LANG['form-description']; ?>" name="description" id="career_description"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-secondary" style=" background-color: #353333; border-color: #353333;;">Отправить заявку</button>
+                            <button type="submit" class="btn btn-secondary" style=" background-color: #353333; border-color: #353333;;"><?php echo $_LANG['form-submit']; ?></button>
                         </form>
                     </div>
                     <div class="offer-img">
@@ -693,13 +693,13 @@ if ($_GET['land'] == null || $_GET['land'] == 'lv') {
         <section id="section_contacts">
             <div class="container">
                 <div class="worktype_text">
-                    <h1 style="color:white">КОНТАКТЫ</h1>
+                    <h1 style="color:white"><?php echo $_LANG['contacts-title']; ?></h1>
                 </div>
                 <div class="container">
                     <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2176.471257164596!2d24.154346316105084!3d56.94072690721367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTbCsDU2JzI2LjYiTiAyNMKwMDknMjMuNSJF!5e0!3m2!1sru!2slv!4v1635703621841!5m2!1sru!2slv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
                     <div class="contacts-info" style="color:white">
                         <div class="contact">
-                            <h4>Телефон:</h4>
+                            <h4><?php echo $_LANG['contacts-tel']; ?>:</h4>
                             <h6>+37129579997</h6>
                         </div>
                         <div class="contact">
@@ -707,33 +707,33 @@ if ($_GET['land'] == null || $_GET['land'] == 'lv') {
                             <h6>info.indalplv@gmail.com</h6>
                         </div>
                         <div class="contact">
-                            <h4>Адрес:</h4>
+                            <h4><?php echo $_LANG['contacts-address']; ?>:</h4>
                             <h6>
                                 Lauvas iela 6
                                 Latgales priekšpilsēta, Rīga, LV-1003 </h6>
                         </div>
                         <br>
                         <div class="contact">
-                            <h3 style=" color: #ffd034e5;">НАПИСАТЬ НАМ</h3>
+                            <h3 style=" color: #ffd034e5;"><?php echo $_LANG['contacts-form-title']; ?></h3>
                         </div>
                         <div class="offer-input" style="width: 200px;">
                             <form action="form-handler.php" style="width: 450px;" method="POST">
 
                                 <div class="mb-3">
 
-                                    <input type="text" class="form-control career-input" placeholder="Имя" name="name" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <input type="text" class="form-control career-input" placeholder="<?php echo $_LANG['form-name']; ?>" name="name" id="exampleInputEmail1" aria-describedby="emailHelp">
                                 </div>
                                 <div class="mb-3">
-                                    <input type="tel" class="form-control career-input" required placeholder="Телефон *" name="phone" id="exampleInputPassword1">
+                                    <input type="tel" class="form-control career-input" required placeholder="<?php echo $_LANG['form-tel']; ?>" name="phone" id="exampleInputPassword1">
                                 </div>
                                 <div class="mb-3">
                                     <input type="mail" class="form-control career-input" placeholder="Е-mail" name="mail" id="exampleInputPassword1">
                                     <input type="hidden" name="form" value="career">
                                 </div>
                                 <div class="mb-3">
-                                    <textarea type="text" class="form-control" required placeholder="Краткое описаниe" name="description" id="career_description"></textarea>
+                                    <textarea type="text" class="form-control" required placeholder="<?php echo $_LANG['form-description']; ?>" name="description" id="career_description"></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-secondary" style=" color: black; background-color: #ffd034e5; border-color: #353333;;">Отправить заявку</button>
+                                <button type="submit" class="btn btn-secondary" style=" color: black; background-color: #ffd034e5; border-color: #353333;;"><?php echo $_LANG['form-submit']; ?></button>
                             </form>
                         </div>
                     </div>

@@ -15,7 +15,7 @@ $_LANG = array(
     'ordering-title' => 'APRĒĶINĀSIM JŪSU PASŪTĪJUMU',
 
     'form-name' => 'Vārds',
-    'form-tel' => 'Telefons*',
+    'form-tel' => 'Tālrunis*',
     'form-description' => 'Īss apraksts',
     'form-submit' => 'Nosūtīt pieteikumu',
 
@@ -60,7 +60,7 @@ $_LANG = array(
     <br>- Noteku un notekcauruļu tīrīšana
     ',
 
-    'why-title' => 'Kāpēc mēs?',
+    'why-title' => 'KĀPĒC MĒS?',
     'why-content-title-1' => 'Uzticamība',
     'why-content-text-1' => 'atkārtotu pieprasījumu no klientiem. Strādājam, ievērojot visus drošības pasākumus.',
     'why-content-title-2' => 'Pieredze',
@@ -73,10 +73,10 @@ $_LANG = array(
     'why-content-title-6' => 'Profesionalitāte',
     'why-content-text-6' => 'Sagatavosim piedāvājumu optimālajam visu vēlmju risinājumam. Mūsu prioritāte vienmēr ir klienta intereses, un mums uzticas jau vairāk nekā <strong style="color:#ffd034;">10 gadus</strong> .',
 
-    'why2-title' => 'Klienti',
+    'why2-title' => 'KLIENTI',
 
-    'questions-title' => 'Klientu bieži',
-    'questions-subtitle' => 'uzdotie jautājumi',
+    'questions-title' => 'KLIENTU BIEŽ',
+    'questions-subtitle' => 'UZDOTIE JAUTĀJUMI',
     'questions-question-1' => 'Kādā augstumā var strādāt industriālie alpīnisti?',
     'questions-answer-1' => 'Alpīnistu darbības augstumu ierobežo tikai viens faktors – virves garums. Alpīnistu rīcībā ir profesionāls un atbilstošs aprīkojums, tāpēc viņi var strādāt uz jebkura stāvu skaita konstrukcijām. No drošības viedokļa, jo zemāka ir konstrukcija, jo mazāk laika alpīnistam būs nepieciešams, lai bīstamās situācijas gadījumā nokāptu. Tāpēc alpīnistam galveno lomu spēlē nevis konstrukcijas augstums, bet gan attālums no aprīkojuma piestiprināšanas vietas līdz darba vietai.',
     'questions-question-2' => 'Vai laika apstākļi ietekmē darbu?',
@@ -86,6 +86,18 @@ $_LANG = array(
     'questions-question-4' => 'Vai jūs varat noņemt kokus, koku zarus?  ',
     'questions-answer-4' => 'Jā, protams! Novācam kokus ar industriālā alpīnismu metodi, neizmantojot speciālu tehniku: pacēlāju platformas, autoceltņus. Mūsu metode ne ar ko nav sliktāka par koku zāģēšanu no pacēlāju platformas, un lielā mērā tā pat ir labāka: ietaupījums uz pacēlāju platformas nomas, iespēja strādāt šaurās un grūti sasniedzamās vietās.',
 
+    'offer-title' => 'UZRAKSTIET MUMS SAVU PIEPRASĪJUMU', 
+    
+    'objects-title' => 'OBJEKTI',
+    'objects-subtitle' => 'GALERIJA',
 
+    'career-title' => 'KARJERA',
+    'career-subtitle' => 'DARBS PIE MUMS',
+    'career-text' => 'Aizpildiet tiešsaistes formu, augšupielādējiet savu CV, un mēs ar jums sazināsimies, ja būs piemērotas vakances.',
+    
+    'contacts-title' => 'KONTAKTI',
+    'contacts-address' => 'Adrese',
+    'contacts-tel' => 'Tālrunis',
+    'contacts-form-title' => 'UZRAKSTĪT MUMS',
 );
 
