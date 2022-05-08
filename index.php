@@ -130,7 +130,94 @@ if ($_GET['land'] == null || $_GET['land'] == 'lv') {
 
         });
     </script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script>
+		!window.jQuery && document.write('<script src="jquery-1.4.3.min.js"><\/script>');
+	</script>
+	<script type="text/javascript" src="./fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="./fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="./fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+ 	<link rel="stylesheet" href="style.css" />
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			*   Examples - images
+			*/
 
+			$("a#example1").fancybox();
+
+			$("a#example2").fancybox({
+				'overlayShow'	: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'elastic'
+			});
+
+			$("a#example3").fancybox({
+				'transitionIn'	: 'none',
+				'transitionOut'	: 'none'	
+			});
+
+			$("a#example4").fancybox({
+				'opacity'		: true,
+				'overlayShow'	: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'none'
+			});
+
+			$("a#example5").fancybox();
+
+			$("a#example6").fancybox({
+				'titlePosition'		: 'outside',
+				'overlayColor'		: '#000',
+				'overlayOpacity'	: 0.9
+			});
+
+			$("a#example7").fancybox({
+				'titlePosition'	: 'inside'
+			});
+
+			$("a#example8").fancybox({
+				'titlePosition'	: 'over'
+			});
+
+			$("a[rel=example_group]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+
+			/*
+			*   Examples - various
+			*/
+
+			$("#various1").fancybox({
+				'titlePosition'		: 'inside',
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+
+			$("#various2").fancybox();
+
+			$("#various3").fancybox({
+				'width'				: '75%',
+				'height'			: '75%',
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'type'				: 'iframe'
+			});
+
+			$("#various4").fancybox({
+				'padding'			: 0,
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+		});
+	</script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -550,82 +637,62 @@ if ($_GET['land'] == null || $_GET['land'] == 'lv') {
 
             <div class="container">
 
-                <div class="row">
-                    <div class="col">
-                        <img src="/gallery-img/v_-10.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
-                    </div>
-                    <div class="col">
-                        <img src="/gallery-img/v_-11.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
-                    </div>
-                    <div class="col">
-                        <img src="/gallery-img/v_-12.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
-                    </div>
-                    <div class="col">
-                        <img src="/gallery-img/v_-14.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
-                    </div>
-                </div>
+               
 
-                <div class="row">
-                    <div class="col">
-                        <img src="/gallery-img/v_-15.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
-                    </div>
-                    <div class="col">
-                        <img src="/gallery-img/v_-16.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
-                    </div>
-                    <div class="col">
-                        <img src="/gallery-img/v_-8.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
-                    </div>
-                    <div class="col">
-                        <img src="/gallery-img/v_-18.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
-                    </div>
-                </div>
+               
+                <p class="row">
+		<a class="col" rel="example_group" href="gallery-img/v_-10.jpg" title=""><img alt="" src="gallery-img/v_-10.jpg" width="290" height="200" tabindex="0"/></a>
 
-                <div class="row">
-                    <div class="col">
-                        <img src="/gallery-img/v_-19.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
-                    </div>
-                    <div class="col">
-                        <img src="/gallery-img/v_-2.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
-                    </div>
-                    <div class="col">
-                        <img src="/gallery-img/v_-20.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
-                    </div>
-                    <div class="col">
-                        <img src="/gallery-img/v_-21.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
-                    </div>
-                </div>
+		<a class="col" rel="example_group" href="/gallery-img/v_-11.jpg" title=""><img alt="" src="/gallery-img/v_-11.jpg" width="290" height="200" tabindex="0" /></a>
 
-                <div class="row">
-                    <div class="col">
-                        <img src="/gallery-img/v_-22.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
-                    </div>
-                    <div class="col">
-                        <img src="/gallery-img/v_-23.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
-                    </div>
-                    <div class="col">
-                        <img src="/gallery-img/v_-3.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
-                    </div>
-                    <div class="col">
-                        <img src="/gallery-img/v_-4.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
-                    </div>
-                </div>
+		<a class="col" rel="example_group" href="/gallery-img/v_-12.jpg" title=""><img alt="" src="/gallery-img/v_-12.jpg" width="290" height="200" tabindex="0" /></a>
+		
+		<a class="col" rel="example_group" href="/gallery-img/v_-14.jpg" title=""><img class="last" alt="" src="/gallery-img/v_-14.jpg" width="290" height="200" tabindex="0" /></a>
+	</p>
 
-                <div class="row">
-                    <div class="col">
-                        <img src="/gallery-img/v_-5.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
-                    </div>
-                    <div class="col">
-                        <img src="/gallery-img/v_-6.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
-                    </div>
-                    <div class="col">
-                        <img src="/gallery-img/v_-7.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
-                    </div>
-                    <div class="col">
-                        <img src="/gallery-img/v_-24.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
-                    </div>
-                </div>
+            
+                <p class="row">
+		<a class="col" rel="example_group" href="gallery-img/v_-15.jpg" title=""><img alt="" src="gallery-img/v_-15.jpg" width="290" height="200" tabindex="0"/></a>
 
+		<a class="col" rel="example_group" href="/gallery-img/v_-16.jpg" title=""><img alt="" src="/gallery-img/v_-16.jpg" width="290" height="200" tabindex="0" /></a>
+
+		<a class="col" rel="example_group" href="/gallery-img/v_-8.jpg" title=""><img alt="" src="/gallery-img/v_-8.jpg" width="290" height="200" tabindex="0" /></a>
+		
+		<a class="col" rel="example_group" href="/gallery-img/v_-18.jpg" title=""><img class="last" alt="" src="/gallery-img/v_-18.jpg" width="290" height="200" tabindex="0" /></a>
+	</p>
                 
+		
+    <p class="row">
+		<a class="col" rel="example_group" href="gallery-img/v_-19.jpg" title="" ><img alt="" src="gallery-img/v_-19.jpg" width="290" height="200" tabindex="0"/></a>
+
+		<a class="col" rel="example_group" href="/gallery-img/v_-2.jpg" title=""><img alt="" src="/gallery-img/v_-2.jpg" width="290" height="200" tabindex="0" /></a>
+
+		<a class="col" rel="example_group" href="/gallery-img/v_-20.jpg" title=""><img alt="" src="/gallery-img/v_-20.jpg" width="290" height="200" tabindex="0" /></a>
+		
+		<a class="col" rel="example_group" href="/gallery-img/v_-21.jpg" title=""><img class="last" alt="" src="/gallery-img/v_-21.jpg" width="290" height="200" tabindex="0" /></a>
+	</p>
+
+                <p class="row">
+		<a class="col gallary-img" rel="example_group" href="gallery-img/v_-22.jpg" title=""><img alt="" src="gallery-img/v_-22.jpg" width="290" height="200" tabindex="0"/></a>
+
+		<a class="col gallary-img" rel="example_group" href="/gallery-img/v_-23.jpg" title=""><img alt="" src="/gallery-img/v_-23.jpg" width="290" height="200" tabindex="0" /></a>
+
+		<a class="col gallary-img" rel="example_group" href="/gallery-img/v_-3.jpg" title=""><img alt="" src="/gallery-img/v_-3.jpg" width="290" height="200" tabindex="0" /></a>
+		
+		<a class="col gallary-img" rel="example_group" href="/gallery-img/v_-4.jpg" title=""><img class="last" alt="" src="/gallery-img/v_-4.jpg" width="290" height="200" tabindex="0" /></a>
+	</p>
+    
+               
+                
+                <p class="row">
+		<a class="col gallary-img" rel="example_group" href="gallery-img/v_-5.jpg" title=""><img alt="" src="gallery-img/v_-5.jpg" width="290" height="200" tabindex="0"/></a>
+
+		<a class="col gallary-img" rel="example_group" href="/gallery-img/v_-6.jpg" title=""><img alt="" src="/gallery-img/v_-6.jpg" width="290" height="200" tabindex="0" /></a>
+
+		<a class="col gallary-img" rel="example_group" href="/gallery-img/v_-7.jpg" title=""><img alt="" src="/gallery-img/v_-7.jpg" width="290" height="200" tabindex="0" /></a>
+		
+		<a class="col gallary-img" rel="example_group" href="/gallery-img/v_-24.jpg" title=""><img class="last" alt="" src="/gallery-img/v_-24.jpg" width="290" height="200" tabindex="0" /></a>
+	</p>
 
 
 
