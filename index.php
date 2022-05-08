@@ -561,7 +561,7 @@ if ($_GET['land'] == null || $_GET['land'] == 'lv') {
                         <img src="/gallery-img/v_-12.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
                     </div>
                     <div class="col">
-                        <img src="/gallery-img/v_-13.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
+                        <img src="/gallery-img/v_-14.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
                     </div>
                 </div>
 
@@ -573,7 +573,7 @@ if ($_GET['land'] == null || $_GET['land'] == 'lv') {
                         <img src="/gallery-img/v_-16.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
                     </div>
                     <div class="col">
-                        <img src="/gallery-img/v_-17.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
+                        <img src="/gallery-img/v_-8.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
                     </div>
                     <div class="col">
                         <img src="/gallery-img/v_-18.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
@@ -621,24 +621,11 @@ if ($_GET['land'] == null || $_GET['land'] == 'lv') {
                         <img src="/gallery-img/v_-7.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
                     </div>
                     <div class="col">
-                        <img src="/gallery-img/v_-8.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
+                        <img src="/gallery-img/v_-24.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col">
-                        <img src="/gallery-img/v_-9.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
-                    </div>
-                    <div class="col">
-                        <img src="/gallery-img/v_-14.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
-                    </div>
-                    <div class="col">
-                        <img src="/gallery-img/v_-9.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
-                    </div>
-                    <div class="col">
-                        <img src="/gallery-img/v_-13.jpg" alt="Cinque Terre" width="290" height="200" tabindex="0">
-                    </div>
-                </div>
+                
 
 
 
