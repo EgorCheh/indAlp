@@ -782,7 +782,7 @@ if ($_GET['land'] == null || $_GET['land'] == 'lv') {
                                 </div>
                                 <div class="mb-3">
                                     <input type="mail" class="form-control career-input" placeholder="Е-mail" name="mail" id="exampleInputPassword1">
-                                    <input type="hidden" name="form" value="career">
+                                    <input type="hidden" name="form" value="kontact">
                                 </div>
                                 <div class="mb-3">
                                     <textarea type="text" class="form-control" required placeholder="<?php echo $_LANG['form-description']; ?>" name="description" id="career_description"></textarea>
