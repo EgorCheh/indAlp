@@ -22,7 +22,7 @@ if ($_GET['land'] == null || $_GET['land'] == 'lv') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ind-Alp</title>
 
-
+    
     <link rel="stylesheet" href="simple-adaptive-slider.min.css">
     <script defer src="simple-adaptive-slider.min.js"></script>
     <script>
