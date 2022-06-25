@@ -364,7 +364,7 @@ if ($_GET['land'] == null || $_GET['land'] == 'lv') {
                     <h1><?php echo $_LANG['worktype-title']; ?></h1>
                 </div>
                 <div class="container_worktype_cards">
-                    <div class="card" style="width: 21rem;">
+                    <div class="card" >
                         <img src="/wall-img/fasad.jpg" class="card-img-top" alt="..." width="400" height="400">
                         <div class="card-body">
                             <h5 class="card-title"><?php echo $_LANG['worktype-type1']; ?></h5>
@@ -374,7 +374,7 @@ if ($_GET['land'] == null || $_GET['land'] == 'lv') {
 
                         </div>
                     </div>
-                    <div class="card" style="width: 21rem;">
+                    <div class="card" >
                         <img src="/wall-img/okna.jpg" class="card-img-top" alt="..." width="400" height="400">
                         <div class="card-body">
                             <h5 class="card-title"><?php echo $_LANG['worktype-type2']; ?></h5>
@@ -384,7 +384,7 @@ if ($_GET['land'] == null || $_GET['land'] == 'lv') {
 
                         </div>
                     </div>
-                    <div class="card" style="width: 21rem;">
+                    <div class="card" >
                         <img src="/wall-img/drygoe.jpg" class="card-img-top" alt="..." width="400" height="400">
                         <div class="card-body">
                             <h5 class="card-title"><?php echo $_LANG['worktype-type3']; ?></h5>
@@ -501,7 +501,7 @@ if ($_GET['land'] == null || $_GET['land'] == 'lv') {
                                 <img src="/clients-img/kuber-logo.png" alt="Cinque Terre" width="140" height="70">
                             </div>
                         </div>
-                        <div class="row" style="width: 90%; margin-left: 50px;">
+                        <div class="row" id="row_w90_ml50" >
                             <div class="col">
                                 <img src="/clients-img/img_58afa85ff0fe80.91654338.png" alt="Cinque Terre" width="300" height="110">
                             </div>
@@ -512,7 +512,7 @@ if ($_GET['land'] == null || $_GET['land'] == 'lv') {
                                 <img src="/clients-img/torensberg-logo-5e582921a2092-large.jpg" alt="Cinque Terre" width="210" height="100">
                             </div>
                         </div>
-                        <div class="row " style="margin-bottom: 30px;">
+                        <div class="row " id="card_mb30">
                             <div class="col">
                                 <img src="/clients-img/rs_logo_300_0.jpg" alt="Cinque Terre" width="300" height="90">
                             </div>
@@ -540,7 +540,7 @@ if ($_GET['land'] == null || $_GET['land'] == 'lv') {
                 <div class="container_worktype_cards row row-cols-1 row-cols-md-2 g-4">
 
                     <div class="col">
-                        <div class="card qest-card" style="width: 36rem; height: 430px;">
+                        <div class="card qest-card" style="width: 36rem; height: auto;">
                             <div class="card-head qest">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="#FFCE34" fill="currentColor" class="bi bi-check-circle " viewBox="0 0 16 16">
                                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
@@ -553,7 +553,7 @@ if ($_GET['land'] == null || $_GET['land'] == 'lv') {
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card qest-card" style="width: 36rem; height: 430px;">
+                        <div class="card qest-card" style="width: 36rem; height: auto;">
                             <div class="card-head qest">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="#FFCE34" fill="currentColor" class="bi bi-check-circle " viewBox="0 0 16 16">
                                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
@@ -566,7 +566,7 @@ if ($_GET['land'] == null || $_GET['land'] == 'lv') {
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card qest-card" style="width: 36rem; height: 350px;">
+                        <div class="card qest-card" style="width: 36rem; height: auto;">
                             <div class="card-head qest">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="#FFCE34" fill="currentColor" class="bi bi-check-circle " viewBox="0 0 16 16">
                                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
@@ -579,7 +579,7 @@ if ($_GET['land'] == null || $_GET['land'] == 'lv') {
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card qest-card" style="width: 36rem; height: 350px;">
+                        <div class="card qest-card" style="width: 36rem; height: auto;">
                             <div class="card-head qest">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="#FFCE34" fill="currentColor" class="bi bi-check-circle " viewBox="0 0 16 16">
                                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
@@ -714,7 +714,7 @@ if ($_GET['land'] == null || $_GET['land'] == 'lv') {
                     <?php echo $_LANG['career-text'];?>
                     </h5>
                     <div class="offer-input">
-                        <form action="form-handler.php" style="width: 450px;" method="POST">
+                        <form action="form-handler.php"  method="POST">
 
                             <div class="mb-3">
 
@@ -771,7 +771,7 @@ if ($_GET['land'] == null || $_GET['land'] == 'lv') {
                             <h3 style=" color: #ffd034e5;"><?php echo $_LANG['contacts-form-title']; ?></h3>
                         </div>
                         <div class="offer-input" style="width: 200px;">
-                            <form action="form-handler.php" style="width: 450px;" method="POST">
+                            <form action="form-handler.php"  method="POST">
 
                                 <div class="mb-3">
 

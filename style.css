@@ -275,6 +275,9 @@ h4 {
 #section_questions .card{
   padding: 15px;
 }
+#section_worktype .card{
+  width: 21rem;
+}
 
 .card-title,h1{
   font-weight:bold;
@@ -467,6 +470,17 @@ ul {
 }
 
 
+
+#section_contacts form {
+  width: 450px;
+}
+
+#section_career form {
+  width: 450px;
+}
+
+
+
 #myModal {
   max-width: 450px; max-height:  300px;
   margin: 0 auto;
@@ -570,7 +584,7 @@ ul {
 
 
 .map{
-  background-color: blue;
+  background-color: #FFCE34;
   height: 400px;
   display: inline-block;
 }
@@ -593,12 +607,28 @@ margin-left: 100px;
   
 }
 
+#row_w90_ml50{
+  width: 90%;
+  margin-left: 50px;
+}
 
+#row_mb30{
+  margin-bottom: 30px;
+}
 
 
 
 
 @media only screen and (max-width: 480px) {
+  html{
+    width:300px
+  }
+  #first_parallax{
+    width: 300px;
+  }
+  .parallax{
+    min-width: 300px;
+  }
   #container_about {
     display: block;
   }
@@ -607,6 +637,9 @@ margin-left: 100px;
   }
   .text_about {
     display: block;
+  }
+  .text_about p,h3{
+  width: 280px;
   }
 
   #section_ordering .container {
@@ -620,6 +653,7 @@ margin-left: 100px;
     display: block;
     padding-top: 50px;
     padding-bottom: 20px;
+    width: 280px;
   }
 
   #section_why .container_why {
@@ -633,22 +667,31 @@ margin-left: 100px;
   }
 
   .worktype_text {
-    max-width: 300px;
     padding-top: 30px;
     padding-bottom: 20px;
   }
+  .card{
+    width: 300px;
+  }
+  .card-img-top{
+    width: 280px;
+  }
+
 
   .container_worktype_cards {
     display: block;
+    
   }
-  .card {
+  #section_worktype .card {
     display: block;
+    width: 280px;
+    margin-top: 8px;
   }
 
 
 
   #section_why .text {
-    max-width: 350px;
+    max-width: 300px;
     padding-left: 5px;
   }
   .container_why h4 {
@@ -656,6 +699,10 @@ margin-left: 100px;
     margin-left: 8px;
     max-width: 250px;
     
+  }
+  .container_text{
+    width: 300px;
+    padding: 0 0;
   }
 
 #section_why_2 .container_worktype_cards{
@@ -678,11 +725,67 @@ margin-left: 100px;
   padding-bottom: 10px;
 }
 .parallax {
-  max-width: 480px;
+  max-width: 300px;
 }
 header {
-  max-width: 480px;
+  max-width: 300px;
 }
+
+#section_why_2 img{
+width: 280px;
+padding-right: 25px;
+};
+#section_why_2 .row{
+  margin-left: 1px;
+}
+#row_w90_ml50{
+  margin-left: 1px;
+
+}
+.card .qest-card{
+height: max-content;  
+}
+
+#section_career .form{
+width: 300px;
+}
+.offer-input{
+  width: 280px;
+}
+
+ .career-input{
+  width: 280px;
+}
+.career-discription{
+  padding-right: 5px;
+}
+#career_description{
+  width: 280px;
+}
+.offer-img{
+  width: 280px;
+  margin-top: 8px;
+}
+ iframe{
+width: 280px;
+}
+.contacts-info{
+  margin-left: 0;
+}
+#section_contacts .mb-3 {
+  width: 300px;
+}
+#section_contacts form {
+  width: 300px;
+}
+#section_career .mb-3 {
+  width: 300px;
+}
+#section_career form {
+  width: 300px;
+}
+
+
 }
 
 #section_contacts .container-info{
